@@ -1,0 +1,18 @@
+<%- include ('home') %>
+
+    <div class="weather-card">
+        <h2>Weather in <span class="city">
+                <%= weatherData.city %>
+            </span></h2>
+        <p class="description"> It is currently <%= weatherData.description %>
+        </p>
+        <p class="temp"> Temperature right now : <%= weatherData.temp %>°C</p>
+        <p class="feels_like">However, it feels like <%= weatherData.feels_like %>°C</p>
+        <p class="temp_max">Max. temp. : <%= weatherData.temp_max %>°C
+        </p>
+        <p class="temp_min">Min. temp. : <%= weatherData.temp_min %>°C
+        </p>
+    </div>
+    </body>
+
+    </html>

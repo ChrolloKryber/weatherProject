@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html {
+    background: #252525;
+    color: rgb(236, 231, 231);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 7% 0;
+}
+
+form {
+    padding: 10px 0;
+}
+
+input,
+.btn {
+    border: 1px solid rgb(236, 231, 231);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: grab;
+    transition: all 0.3s ease;
+}
+
+.weather-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    color: #252525;
+}
+
+.weather-card h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.weather-card .city {
+    color: #0066cc;
+}
+
+.weather-card .description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.weather-card .temp {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.weather-card .feels_like {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.weather-card .temp_max,
+.weather-card .temp_min {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
