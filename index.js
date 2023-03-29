@@ -21,7 +21,6 @@ app.post('/', (req, res) => {
     const city = req.body.city;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
     https.get(url, (response) => {
-        console.log(response.statusCode);
         response.on('data', (weather) => {
             if (response.statusCode == 200) {
                 const data = JSON.parse(weather);
@@ -29,8 +28,8 @@ app.post('/', (req, res) => {
                 const feels_like = data.main.feels_like;
                 const temp_min = data.main.temp_min;
                 const temp_max = data.main.temp_max;
-                let description = data.weather[0].main;
-                if (description == 'Clouds') {
+                let description = data.weather[0].main.toLowerCase();
+                if (description == 'clouds') {
                     description = 'cloudy';
                 }
                 const weatherData = {
