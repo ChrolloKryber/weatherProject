@@ -40,11 +40,12 @@ input,
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 15px 15px 20px rgba(218, 212, 212, 0.938);
     margin: 20px auto;
     max-width: 600px;
     padding: 20px;
     color: #252525;
+    width: 40%;
 }
 
 .weather-card h2 {
