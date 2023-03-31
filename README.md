@@ -26,8 +26,8 @@ Hi there! This is a small personal project I did to learn more about fullstack d
 
 ### Links
 
-- [Solution URL](https://github.com/ChrolloKryber/blogWebsite)
-- [Live Site URL](https://easy-plum-katydid-yoke.cyclic.app/)
+- [Solution URL](https://github.com/ChrolloKryber/weatherProject/)
+- [Live Site URL](https://weatherproject-production-0d38.up.railway.app/)
 
 ## My process
 
