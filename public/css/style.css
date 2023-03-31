@@ -29,11 +29,17 @@ form {
 
 input,
 .btn {
-    border: 1px solid rgb(236, 231, 231);
+    border: 0;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: grab;
     transition: all 0.3s ease;
+}
+
+.btn {
+    background-color: #0066cc;
+    color: white;
+    border-width: 0;
 }
 
 .weather-card {
