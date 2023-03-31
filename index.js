@@ -13,6 +13,32 @@ app.set('view engine', 'ejs');
 const apiKey = process.env.API_KEY;
 const port = process.env.PORT;
 
+function switchDescription(description) {
+  switch (description) {
+    case 'clouds':
+      description = 'cloudy'
+      break;
+    case 'haze':
+      description = 'hazy'
+      break;
+    case "drizzle":
+      description = 'drizzling'
+      break;
+    case "rain":
+      description = 'raining'
+      break;
+    case "snow":
+      description = 'snowing'
+      break;
+    case "mist":
+      description = 'misty'
+      break;
+    default:
+      break;
+  }
+  return description;
+}
+
 app.get('/', (req, res) => {
   const defaultCity = 'Delhi';
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${defaultCity}&appid=${apiKey}&units=metric`
@@ -24,17 +50,7 @@ app.get('/', (req, res) => {
         const feels_like = data.main.feels_like;
         const temp_min = data.main.temp_min;
         const temp_max = data.main.temp_max;
-        let description = data.weather[0].main.toLowerCase();
-        switch (description) {
-          case 'clouds':
-            description = 'cloudy'
-            break;
-          case 'haze':
-            description = 'hazy'
-            break;
-          default:
-            break;
-        }
+        let description = switchDescription(data.weather[0].main.toLowerCase());
         const weatherData = {
           city: data.name,
           temp: temp,
@@ -60,17 +76,7 @@ app.post('/', (req, res) => {
         const feels_like = data.main.feels_like;
         const temp_min = data.main.temp_min;
         const temp_max = data.main.temp_max;
-        let description = data.weather[0].main.toLowerCase();
-        switch (description) {
-          case 'clouds':
-            description = 'cloudy'
-            break;
-          case 'haze':
-            description = 'hazy'
-            break;
-          default:
-            break;
-        }
+        let description = switchDescription(data.weather[0].main.toLowerCase());
         const weatherData = {
           city: data.name,
           temp: temp,
