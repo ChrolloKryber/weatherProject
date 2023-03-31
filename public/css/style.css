@@ -80,6 +80,19 @@ input,
     margin-bottom: 10px;
 }
 
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #444141;
+}
+
+footer a {
+    color: white;
+}
+
 @media screen and (max-width: 1200px) {
 
     .container,
