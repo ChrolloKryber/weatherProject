@@ -45,7 +45,7 @@ input,
 .weather-card {
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 0 20px rgba(218, 212, 212, 0.938);
     margin: 20px auto;
     max-width: 600px;
